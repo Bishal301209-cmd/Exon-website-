@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Exon — Luxury Watches</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="index.html" class="brand"><img src="assets/logo.svg" alt="Exon logo" style="width:52px;height:52px;border-radius:10px"/><div style="line-height:1"><strong>Exon</strong><div style="color:#9aa6b2;font-size:12px">Luxury Watches</div></div></a>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="collection.html">Collection</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn" href="collection.html">Shop</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <h1 class="h1">Exon — Timeless Precision</h1>
+        <p class="lead">Crafted with precision. Designed for those who value moments. Discover Exon's curated watches — where luxury meets engineering.</p>
+        <div style="display:flex;gap:12px;margin-bottom:16px">
+          <a class="btn" href="collection.html">View Collection</a>
+          <a href="about.html" style="color:var(--muted);align-self:center">Learn more →</a>
+        </div>
+
+        <div class="grid">
+          <div class="feature">
+            <h4>Swiss-inspired movement</h4>
+            <p class="muted">Reliable, smooth, and built to last.</p>
+          </div>
+          <div class="feature">
+            <h4>Premium materials</h4>
+            <p class="muted">Sapphire crystal, stainless steel, and leather options.</p>
+          </div>
+          <div class="feature">
+            <h4>Limited releases</h4>
+            <p class="muted">Exclusive drops for collectors.</p>
+          </div>
+          <div class="feature">
+            <h4>Worldwide shipping</h4>
+            <p class="muted">Secure delivery & insured packages.</p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h3 style="margin:0 0 8px">Featured</h3>
+        <div class="product" style="margin-top:12px">
+          <img src="assets/watch1.svg" alt="Featured watch" />
+          <div class="meta">
+            <div style="font-weight:700">Exon Heritage 42</div>
+            <div class="muted small">Automatic • 42mm</div>
+            <div class="price" style="margin-top:8px">₹29,999</div>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <h4 style="margin:6px 0">Subscribe for launches</h4>
+          <form id="subscribeForm">
+            <div style="display:flex;gap:8px">
+              <input id="email" type="email" placeholder="you@domain.com" required />
+              <button class="btn" type="submit">Subscribe</button>
+            </div>
+            <div style="color:var(--muted);font-size:13px;margin-top:8px">Exclusive previews and offers.</div>
+          </form>
+        </div>
+      </aside>
+    </main>
+
+    <section class="card" style="margin-top:18px">
+      <h2 style="margin-top:0">Why Exon?</h2>
+      <p class="muted">We combine classic watchmaking with modern design. Each Exon watch is inspected by expert watchmakers and comes with a 2-year warranty.</p>
+    </section>
+
+    <footer class="footer">
+      © 2025 Exon — All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('subscribeForm') && document.getElementById('subscribeForm').addEventListener('submit', function(e){e.preventDefault();alert('Thanks! We will notify you about new drops.');this.reset();});
+  </script>
+</body>
+</html>
